@@ -1,0 +1,322 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Inter;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    margin-top: 3%;
+}
+
+#logo {
+    position: relative;
+    margin-top: 3%;
+    width: 15%;
+}
+
+#background {
+    margin-top: 3%;
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    background-image: url('Frame 5.svg');
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.form-container {
+    width: 80%;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+.form-container h1, .form-container h2, .p-center {
+    text-align: center;
+    padding: 2% 0;
+}
+
+.form-container h1 {
+    margin-top: 5%;
+    color: #117BB6;
+}
+
+.form-container h2 {
+    margin-top: 2%;
+}
+
+.form-container p {
+    margin-top: 2%;
+    color: #666;
+    margin-bottom: 5%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    margin: 1% 8%;
+}
+
+.form-container h3 {
+    margin: 1% 8%;
+    margin-top: 3%;
+}
+
+.form-container p {
+    margin: 1% 8%;
+}
+
+.input-group label, .input-group input, .input-group select, .input-group textarea {
+    flex: 1;
+}
+
+.input-group label {
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    padding: 1.3%;
+    margin: 0 1%;
+    border: 1px solid #ccccccb7;
+    border-radius: 4px;
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+}
+
+.upload-container img {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.upload-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-details p {
+    margin: 0;
+    width: 60%;
+}
+
+.upload-details span {
+    color: black;
+    font-weight: 500;
+}
+
+.upload-details a {
+    color: #117BB6;
+    text-decoration: underline;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+}
+
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8%;
+}
+
+.checkbox-label {
+    flex-grow: 0;
+}
+
+.checkbox-item {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 2em;
+    height: 2em;
+    background-image: url('Check Square.png');
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-image: url('Check Square 2.png');
+}
+
+.checkbox-content {
+    margin-top: 7%;
+}
+
+.checkbox-content p {
+    margin: 0;
+}
+
+.checkbox-heading {
+    margin: 0;
+}
+
+.checkbox-paragraph {
+    margin-top: 1%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+}
+
+.checkbox-item label span {
+    font-size: 1em;
+}
+
+#slogan, .form-label {
+    margin-left: 8%;
+}
+
+.slogan-label {
+    padding-top: 2%;
+}
+
+.form-container .form-label, .form-container .section-heading {
+    display: block;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.form-container .form-textarea, .form-container .form-input {
+    width: 100%;
+    padding: 1%;
+    margin-top: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.radio-group {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.radio-group.inline {
+    justify-content: start;
+}
+
+.radio-group.single {
+    margin-top: 1%;
+    display: block;
+}
+
+.radio-label {
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+.radio-label-extra {
+    width: 40%;
+}
+
+.checkbox-group {
+    margin-top: 1%;
+}
+
+.checkbox-group.large .checkbox-label.large {
+    font-size: larger;
+}
+
+.checkbox-group.large .custom-checkbox {
+    width: 3em;
+    height: 3em;
+}
+
+.form-submit {
+    margin-top: 10%;
+    float: right;
+    padding: 1% 5%;
+    font-size: 1em;
+    background-color: #117BB6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden-radio {
+    display: none;
+}
+
+.custom-radio-img {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-image: url('radio.png');
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 1%;
+}
+
+.hidden-radio:checked + label > .custom-radio-img {
+    background-image: url('radio 2.png');
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-group.inline.custom-radio {
+    justify-content: start;
+}
+
+.section-heading {
+    margin-left: 8%;
+    padding-top: 2%;
+}
+
+.radio-group {
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+#addWebsite {
+    margin-left: 8%;
+    margin-top: 1%;
+}
+
+.radio-input-group label {
+    font-weight: 400;
+}
+
+.checkbox-group-last {
+    padding-top: 1%;
+}

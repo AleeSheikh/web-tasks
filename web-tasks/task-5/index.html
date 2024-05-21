@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CampaignBox Intake Form</title>
+</head>
+<body>
+    <header>
+        <img src="Frame 4.png" alt="CampaignBox Logo" id="logo">
+    </header>
+    <div id="background"></div>
+    <main>
+        <div class="form-container">
+            <h1>Campaign Date Intake Form</h1>
+            <h2>Tell Us About Yourself</h2>
+            <p class="p-center">We need your data, please fill out the following information:</p>
+            <form>
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <label for="lastName">Last Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <label for="phone">Phone number</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Enter your Email Address">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                </div>
+                <div class="input-group">
+                    <label for="address">Address</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="address" name="address" style="flex: 1;" placeholder="Enter your Address">
+                </div>
+                <div class="input-group">
+                    <label for="city">City</label>
+                    <label for="state">State</label>
+                    <label for="zip">Zip Code</label>
+                </div>
+                <div class="input-group">
+                    <select id="city" name="city">
+                        <option value="">City name</option>
+                    </select>
+                    <select id="state" name="state">
+                        <option value="">State</option>
+                    </select>
+                    <input type="text" id="zip" name="zip" placeholder="Zipcode">
+                </div>
+                <div class="input-group">
+                    <label for="precinct">Precinct</label>
+                    <label for="county">County</label>
+                </div>
+                <div class="input-group">
+                    <select id="precinct" name="precinct">
+                        <option value="">Precinct name</option>
+                    </select>
+                    <select id="county" name="county">
+                        <option value="">Pakistan</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="bio">Your Bio</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="bio" name="bio" rows="5" style="flex: 1;" placeholder="Please Share Your Bio"></textarea>
+                </div>
+                <h3>Pick a headline that suits you</h3>
+                <p>Pick a headline that suits you</p>
+                <div class="input-group radio-input-group">
+                    <input type="radio" id="option1" name="headline" value="communication" class="hidden-radio">
+                    <label for="option1"><span class="custom-radio-img"></span>Ask voters their preferred communication channel</label>
+                </div>
+                <div class="input-group radio-input-group">
+                    <input type="radio" id="option2" name="headline" value="accessibility" class="hidden-radio">
+                    <label for="option2"><span class="custom-radio-img"></span>inquire about any accessibility needs to ensure that voting facilities accommodate all voters</label>
+                </div>
+                <div class="input-group radio-input-group">
+                    <input type="radio" id="option3" name="headline" value="yeah" class="hidden-radio">
+                    <label for="option3"><span class="custom-radio-img"></span>Offer options for language preference to provide voting materials in languages</label>
+                </div>
+                <h3>Item Quantities</h3>
+                <p>We'd love to know how many of each Item you think you might be able to use</p>
+                <div class="input-group">
+                    <label for="postcards">How many postcards would you like?</label>
+                    <label for="signs">How many campaign signs would you like?</label>
+                </div>
+                <div class="input-group">
+                    <select id="postcards" name="postcards">
+                        <option value="">100</option>
+                    </select>
+                    <select id="signs" name="signs">
+                        <option value="">100</option>
+                    </select>
+                </div>
+                <h3>Upload Profile Picture</h3>
+                <div class="input-group">
+                    <div class="upload-container">
+                        <img src="avatar.png" alt="Profile Picture Placeholder">
+                        <div class="upload-details">
+                            <input type="file" id="profilePicture" name="profilePicture">
+                            <p><span>Choose or drag or drop to add profile picture</span>(JPG, PNG or BMP, Maximum size 30MB) <span>If you do not upload a photo, a default photo will be uploaded </span><a>See Default Photo</a></p>
+                        </div>
+                    </div>
+                </div>
+                <h3>Please Choose Three Talking Points</h3>
+                <p>Choose upto three talking point so that we can get to know you better</p>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <label>
+                            <input type="checkbox" name="talkingPoints" value="point1">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <div class="checkbox-content">
+                            <h4 class="checkbox-heading">Demographic Information</h4>
+                            <p class="checkbox-paragraph">It encompasses statistical data relating to populations, including age, education level, income, and geographic location</p>
+                        </div>
+                        <img src="arrow_right.png" alt="More Info" class="arrow-icon">
+                    </div>
+                    
+                    <div class="checkbox-item">
+                        <label>
+                            <input type="checkbox" name="talkingPoints" value="point2">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <div class="checkbox-content">
+                            <h4 class="checkbox-heading">Community Engagement</h4>
+                            <p class="checkbox-paragraph">Collaboration and empowers individuals to actively participate in shaping their environment</p>
+                        </div>
+                        <img src="arrow_right.png" alt="More Info" class="arrow-icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <label>
+                            <input type="checkbox" name="talkingPoints" value="point3">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <div class="checkbox-content">
+                            <h4 class="checkbox-heading">Source Of Information</h4>
+                            <p class="checkbox-paragraph">It include peer-reviewed research articles, reputable news outlets, and official government publications</p>
+                        </div>
+                        <img src="arrow_right.png" alt="More Info" class="arrow-icon">
+                    </div>
+                    <div class="checkbox-item">
+                        <label>
+                            <input type="checkbox" name="talkingPoints" value="point4">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <div class="checkbox-content">
+                            <h4 class="checkbox-heading">Political Participation</h4>
+                            <p class="checkbox-paragraph">It encompasses various forms of engagement to influence governmental decision-making processes.</p>
+                        </div>
+                        <img src="arrow_right.png" alt="More Info" class="arrow-icon">
+                    </div>
+                </div>
+                <label for="slogan" class="form-label slogan-label">Slogan</label>
+                <textarea id="slogan" name="slogan" rows="3" class="form-textarea" placeholder="Please Share Your Slogan"></textarea>
+
+                <div class="section-heading">Do you want a QR Code on your postcard to go to your website?</div>
+                <div class="radio-group inline">
+                    <input type="radio" id="qrYes" name="qrCode" value="yes" class="hidden-radio">
+                    <label for="qrYes" class="radio-label"><span class="custom-radio-img"></span>Yes</label>
+                    <input type="radio" id="qrNo" name="qrCode" value="no" class="hidden-radio">
+                    <label for="qrNo" class="radio-label"><span class="custom-radio-img"></span>No</label>
+                </div>
+
+                <div class="radio-group single slogan-label">
+                    <input type="radio" id="website" name="placement" value="website" class="hidden-radio">
+                    <label for="website" class="radio-label"><span class="custom-radio-img"></span>Do you want it to go on our website?</label>
+                </div>
+                <div class="radio-group single slogan-label">
+                    <input type="radio" id="website" name="placement" value="website" class="hidden-radio">
+                    <label for="website" class="radio-label"><span class="custom-radio-img"></span>Somewhere else</label>
+                </div>
+
+                <label for="addWebsite" class="form-label slogan-label">Add Website</label>
+                <input type="text" id="addWebsite" name="addWebsite" class="form-input" placeholder="www.xevensolutions.com/mobile-app-development">
+
+                <div class="section-heading">Who do you want to say they are paid by? (will display on sign)</div>
+                <div class="radio-group inline">
+                    <input type="radio" id="paidByConservatives" name="paidBy" value="Gem State Conservatives" class="hidden-radio">
+                    <label for="paidByConservatives" class="radio-label radio-label-extra"><span class="custom-radio-img"></span>Gem State Conservatives</label>
+                    <input type="radio" id="paidByOthers" name="paidBy" value="Others" class="hidden-radio">
+                    <label for="paidByOthers" class="radio-label"><span class="custom-radio-img"></span>Others</label>
+                </div>
+
+                <div class="section-heading">Display On Website</div>
+                <div class="checkbox-group checkbox-group-last">
+                    <input type="checkbox" id="displayPhone">
+                    <label for="displayPhone" class="checkbox-label"><span class="custom-checkbox"></span>Do you want to display phone number on website?</label>
+                </div>
+                <div class="checkbox-group checkbox-group-last">
+                    <input type="checkbox" id="displayAddress">
+                    <label for="displayAddress" class="checkbox-label"><span class="custom-checkbox"></span>Do you want to display your address on website?</label>
+                </div>
+
+                <div class="checkbox-group large checkbox-group-last">
+                    <input type="checkbox" id="authorize">
+                    <label for="authorize" class="checkbox-label large"><span class="custom-checkbox"></span>I authorize the creation, printing, and the use of the following items and that I an</label>
+                </div>
+
+                <button type="submit" class="form-submit">Submit Form</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
